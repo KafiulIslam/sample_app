@@ -23,8 +23,8 @@ class TaskListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (_) => const TaskListScreen()));
+       isIcon == true ?  Navigator.push(
+            context, MaterialPageRoute(builder: (_) => const TaskListScreen())) : null;
       },
       child: Container(
         width: double.infinity,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample_app/utils/colors.dart';
+import 'package:sample_app/view/newTask/new_task_screen.dart';
 import '../../utils/image_string.dart';
 import '../../utils/spacer.dart';
 import '../../utils/typography.dart';
@@ -10,7 +11,6 @@ class TaskListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     List<TaskListTile> _itemsList = const [
       TaskListTile(
         taskTitle: 'Lorem ipsum dolor sit',
@@ -81,7 +81,12 @@ class TaskListScreen extends StatelessWidget {
                     ],
                   ),
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const NewTaskScreen()));
+                      },
                       icon: const Icon(
                         Icons.add_circle,
                         color: primaryColor,

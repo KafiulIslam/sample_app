@@ -3,19 +3,19 @@ import 'colors.dart';
 
 
 final enableBorder = OutlineInputBorder(
-  borderSide: BorderSide(
-    color: primaryBackground,
-    width: 2,
+  borderSide: const BorderSide(
+    color: borderColor,
+    width: 1,
   ),
-  borderRadius: BorderRadius.circular(40),
+  borderRadius: BorderRadius.circular(10.0),
 );
 
 final focusedBorder = OutlineInputBorder(
   borderSide: const BorderSide(
-    color: Color(0x00000000),
-    width: 2,
+    color: borderColor,
+    width: 1,
   ),
-  borderRadius: BorderRadius.circular(40),
+  borderRadius: BorderRadius.circular(10.0),
 );
 
 

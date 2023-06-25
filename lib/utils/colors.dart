@@ -4,6 +4,8 @@ const Color primaryColor = Color(0xFF4942E4);
 const Color scaffoldBackground = Color(0xFFf9f9f9);
 const Color title2Color = Color(0xFF404040);
 const Color assTextColor = Color(0xFF808080);
+const Color primaryTextColor = Color(0xFF2A2A2A);
+const Color borderColor = Color(0xFFE9E9E9);
 
 
 late Color secondaryColor = const Color(0xFF39D2C0);
@@ -11,7 +13,6 @@ late Color tertiaryColor = const Color(0xFFEE8B60);
 late Color alternate = const Color(0xFFFF5963);
 late Color primaryBackground = const Color(0xFFF1F4F8);
 late Color secondaryBackground = const Color(0xFFFFFFFF);
-late Color primaryText = const Color(0xFF101213);
 late Color secondaryText = const Color(0xFF57636C);
 
 late Color primaryBtnText = Color(0xFFFFFFFF);
