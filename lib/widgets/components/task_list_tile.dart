@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample_app/utils/image_string.dart';
+import 'package:sample_app/view/taskPreview/task_preview.dart';
 import '../../utils/colors.dart';
 import '../../utils/spacer.dart';
 import '../../utils/typography.dart';
@@ -9,13 +10,13 @@ class TaskListTile extends StatelessWidget {
   final bool? isIcon;
   final String? imagePath;
   final String? taskTitle;
-  final String? taskNumber;
+  final String? subTitle;
 
   const TaskListTile(
       {Key? key,
       this.imagePath,
       this.taskTitle = 'Tasks',
-      this.taskNumber,
+      this.subTitle,
       this.isIcon = false})
       : super(key: key);
 
@@ -23,8 +24,14 @@ class TaskListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-       isIcon == true ?  Navigator.push(
-            context, MaterialPageRoute(builder: (_) => const TaskListScreen())) : null;
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (_) => isIcon == true
+                    ? TaskListScreen(
+                        subTitle: subTitle!,
+                      )
+                    : TaskPreview(taskTitle: taskTitle,)));
       },
       child: Container(
         width: double.infinity,
@@ -60,40 +67,42 @@ class TaskListTile extends StatelessWidget {
                   ? Image.asset(imagePath!)
                   : const SizedBox.shrink(),
               twentyFourSpacerHorizontal,
-              isIcon == true ? Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    taskTitle!,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: title2,
-                  ),
-                  Text(
-                    '$taskNumber Tasks',
-                    style: bodyText2,
-                  ),
-                ],
-              ) : Container(
-                width: MediaQuery.of(context).size.width / 1.6,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      taskTitle!,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: title2,
+              isIcon == true
+                  ? Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          taskTitle!,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: title2,
+                        ),
+                        Text(
+                          subTitle!,
+                          style: bodyText2,
+                        ),
+                      ],
+                    )
+                  : Container(
+                      width: MediaQuery.of(context).size.width / 1.6,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            taskTitle!,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: title2,
+                          ),
+                          Text(
+                            subTitle!,
+                            style: bodyText2,
+                          ),
+                        ],
+                      ),
                     ),
-                    Text(
-                      '$taskNumber Tasks',
-                      style: bodyText2,
-                    ),
-                  ],
-                ),
-              ) ,
               const Spacer(),
               const Icon(
                 Icons.arrow_forward_ios,
