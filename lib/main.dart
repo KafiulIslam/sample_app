@@ -3,6 +3,7 @@ import 'package:sample_app/utils/colors.dart';
 import 'package:sample_app/view/home/home_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
