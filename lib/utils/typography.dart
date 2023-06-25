@@ -13,6 +13,10 @@ final title2 = GoogleFonts.poppins(
 
 final bodyText1 = GoogleFonts.poppins(
     textStyle: const TextStyle(
+        color: assTextColor, fontSize: 18, fontWeight: FontWeight.w400));
+
+final bodyText2 = GoogleFonts.poppins(
+    textStyle: const TextStyle(
         color: assTextColor, fontSize: 14, fontWeight: FontWeight.w400));
 
 
@@ -29,7 +33,3 @@ final subtitle1 = GoogleFonts.poppins(
 final subtitle2 = GoogleFonts.poppins(
     textStyle: TextStyle(
         color: secondaryText, fontSize: 16, fontWeight: FontWeight.w600));
-
-final bodyText2 = GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: secondaryText, fontSize: 14, fontWeight: FontWeight.w600));

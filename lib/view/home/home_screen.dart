@@ -11,10 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     List<TaskListTile> _tasksList = const [
-      TaskListTile(imagePath: laptop, taskNumber: '6',),
-      TaskListTile(imagePath: laptop, taskNumber: '6',),
-      TaskListTile(imagePath: laptop, taskNumber: '6',),
-      TaskListTile(imagePath: laptop, taskNumber: '6',),
+      TaskListTile(isIcon: true, imagePath: laptop, taskNumber: '6',),
     ];
 
     return SafeArea(
