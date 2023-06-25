@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     List<TaskListTile> _tasksList = const [
       TaskListTile(
         isIcon: true,

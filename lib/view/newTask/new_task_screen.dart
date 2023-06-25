@@ -16,70 +16,71 @@ class NewTaskScreen extends StatefulWidget {
 }
 
 class _NewTaskScreenState extends State<NewTaskScreen> {
+
   final _formKey = GlobalKey<FormBuilderState>();
 
   final List<DropdownMenuItem<String>> itemList = const [
     DropdownMenuItem(
-      child: Text('Work'),
       value: 'Work',
+      child: Text('Work'),
     ),
     DropdownMenuItem(
-      child: Text('Personal Project'),
       value: 'Personal Project',
+      child: Text('Personal Project'),
     ),
     DropdownMenuItem(
-      child: Text('Self'),
       value: 'Self',
+      child: Text('Self'),
     ),
   ];
 
   final List<DropdownMenuItem<String>> priorityList = const [
     DropdownMenuItem(
-      child: Text('Needs done'),
       value: 'Needs done',
+      child: Text('Needs done'),
     ),
     DropdownMenuItem(
-      child: Text('Nice to have'),
       value: 'Nice to have',
+      child: Text('Nice to have'),
     ),
     DropdownMenuItem(
-      child: Text('Nice idea'),
       value: 'Nice idea',
+      child: Text('Nice idea'),
     ),
   ];
 
   final List<DropdownMenuItem<String>> timeFrameList = const [
     DropdownMenuItem(
-      child: Text('None'),
       value: 'None',
+      child: Text('None'),
     ),
     DropdownMenuItem(
-      child: Text('Today'),
       value: 'Today',
+      child: Text('Today'),
     ),
     DropdownMenuItem(
-      child: Text('3 Days'),
       value: '3 Days',
+      child: Text('3 Days'),
     ),
     DropdownMenuItem(
-      child: Text('Week'),
       value: 'Week',
+      child: Text('Week'),
     ),
     DropdownMenuItem(
-      child: Text('Fortnight'),
       value: 'Fortnight',
+      child: Text('Fortnight'),
     ),
     DropdownMenuItem(
-      child: Text('Month'),
       value: 'Month',
+      child: Text('Month'),
     ),
     DropdownMenuItem(
-      child: Text('90 Days'),
       value: '90 Days',
+      child: Text('90 Days'),
     ),
     DropdownMenuItem(
-      child: Text('Year'),
       value: 'Year',
+      child: Text('Year'),
     ),
   ];
 
@@ -158,4 +159,5 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
       ),
     );
   }
+
 }

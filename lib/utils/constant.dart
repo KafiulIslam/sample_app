@@ -17,6 +17,3 @@ final focusedBorder = OutlineInputBorder(
   ),
   borderRadius: BorderRadius.circular(10.0),
 );
-
-
-final commonPad = EdgeInsets.only(left: 16.0,right: 16.0, top: 16.0);

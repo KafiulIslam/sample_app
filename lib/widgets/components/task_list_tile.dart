@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sample_app/utils/image_string.dart';
 import 'package:sample_app/view/taskPreview/task_preview.dart';
 import '../../utils/colors.dart';
 import '../../utils/spacer.dart';

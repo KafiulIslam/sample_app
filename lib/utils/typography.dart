@@ -32,12 +32,3 @@ final buttonTitleStyle = GoogleFonts.poppins(
         color: Colors.white, fontSize: 18, fontWeight: FontWeight.w600));
 
 
-/// unused ///
-
-// final title3 = GoogleFonts.poppins(
-//     textStyle: TextStyle(
-//         color: primaryText, fontSize: 20, fontWeight: FontWeight.w600));
-
-final subtitle2 = GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: secondaryText, fontSize: 16, fontWeight: FontWeight.w600));

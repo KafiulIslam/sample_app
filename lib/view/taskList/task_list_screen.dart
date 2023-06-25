@@ -7,11 +7,13 @@ import '../../utils/typography.dart';
 import '../../widgets/components/task_list_tile.dart';
 
 class TaskListScreen extends StatelessWidget {
+
   final String subTitle;
   const TaskListScreen({Key? key, required this.subTitle}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
     List<TaskListTile> _itemsList = const [
       TaskListTile(
         taskTitle: 'Lorem ipsum dolor sit',

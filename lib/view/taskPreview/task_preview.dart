@@ -6,6 +6,7 @@ import '../../utils/spacer.dart';
 import '../../utils/typography.dart';
 
 class TaskPreview extends StatelessWidget {
+
   final String? taskTitle;
   const TaskPreview({Key? key, this.taskTitle}) : super(key: key);
 
