@@ -7,6 +7,13 @@ const thirtyTwoSpacerHorizontal =  SizedBox(
   width: 32,
 );
 
+const twentyFourSpacerVertical =  SizedBox(
+  height: 24,
+);
+const twentyFourSpacerHorizontal =  SizedBox(
+  width: 24,
+);
+
 const primaryVerticalSpace = SizedBox(height: 16,);
 const primaryHorizontalSpace = SizedBox(width: 16,);
 

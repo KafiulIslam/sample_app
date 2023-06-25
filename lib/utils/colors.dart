@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 const Color primaryColor = Color(0xFF4942E4);
 const Color scaffoldBackground = Color(0xFFf9f9f9);
+const Color title2Color = Color(0xFF404040);
+const Color assTextColor = Color(0xFF808080);
 
 
 late Color secondaryColor = const Color(0xFF39D2C0);

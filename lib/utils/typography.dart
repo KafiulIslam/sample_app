@@ -8,8 +8,15 @@ final title1 = GoogleFonts.poppins(
         color: primaryColor, fontSize: 32, fontWeight: FontWeight.w600));
 
 final title2 = GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: secondaryText, fontSize: 22, fontWeight: FontWeight.w600));
+    textStyle: const TextStyle(
+        color: title2Color, fontSize: 22, fontWeight: FontWeight.w400));
+
+final bodyText1 = GoogleFonts.poppins(
+    textStyle: const TextStyle(
+        color: assTextColor, fontSize: 14, fontWeight: FontWeight.w400));
+
+
+/// unused ///
 
 final title3 = GoogleFonts.poppins(
     textStyle: TextStyle(
@@ -22,10 +29,6 @@ final subtitle1 = GoogleFonts.poppins(
 final subtitle2 = GoogleFonts.poppins(
     textStyle: TextStyle(
         color: secondaryText, fontSize: 16, fontWeight: FontWeight.w600));
-
-final bodyText1 = GoogleFonts.poppins(
-    textStyle: TextStyle(
-        color: primaryText, fontSize: 14, fontWeight: FontWeight.w600));
 
 final bodyText2 = GoogleFonts.poppins(
     textStyle: TextStyle(
