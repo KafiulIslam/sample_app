@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/utils/colors.dart';
 import 'package:sample_app/view/home/home_screen.dart';
 
 void main() {
@@ -14,9 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Sample App',
       theme: ThemeData(
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: const Color(0xFFf9f9f9),
-        primaryColor: const Color(0xFF4942E4),
+        scaffoldBackgroundColor: scaffoldBackground,
+        primaryColor: primaryColor,
         useMaterial3: true,
       ),
       home: const HomeScreen(),
