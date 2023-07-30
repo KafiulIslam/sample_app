@@ -5,7 +5,10 @@ import '../../../utils/typography.dart';
 class PrimaryButton extends StatelessWidget {
   final String? buttonTitle;
   final VoidCallback? onTap;
-  const PrimaryButton({Key? key, this.buttonTitle, this.onTap}) : super(key: key);
+  final bool? isLoading;
+
+  const PrimaryButton({Key? key, this.buttonTitle, this.onTap, this.isLoading})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +23,16 @@ class PrimaryButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.0),
           ),
         ),
-        child: Text(
-          buttonTitle!,
-          style: buttonTitleStyle,
-        ),
+        child: isLoading == true
+            ? Center(
+                child: CircularProgressIndicator(
+                  color: Colors.white.withOpacity(0.3),
+                ),
+              )
+            : Text(
+                buttonTitle!,
+                style: buttonTitleStyle,
+              ),
       ),
     );
   }
